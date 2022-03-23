@@ -1,0 +1,26 @@
+{
+  "name": "with-chakra-ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^1.1.1",
+    "@chakra-ui/react": "^1.6.7",
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.0.0",
+    "axios": "^0.24.0",
+    "dependencies": "^0.0.1",
+    "firebase": "^7.17.1",
+    "firebase-admin": "^10.0.0",
+    "framer-motion": "^4.0.0",
+    "google-auth-library": "^7.10.2",
+    "next": "^9.1.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "searchitunes": "^2.5.4"
+  }
+}
