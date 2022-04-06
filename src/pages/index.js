@@ -1,4 +1,4 @@
-import { Box, Spinner, Flex } from "@chakra-ui/react";
+import { Box, Spinner, Flex, Text } from "@chakra-ui/react";
 import Router, { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { fireAuth } from "../service/firebase";
@@ -9,7 +9,7 @@ export default function Index() {
   const [loading, setLoading] = useState(true);
 
 
-  const router = useRouter();
+  // const router = useRouter();
 
   useEffect(() => {
     fireAuth.onAuthStateChanged((user) => {
@@ -45,7 +45,8 @@ export default function Index() {
     return (
       <Box h="100vh">
         <Nav user={user} onLogout={onLogout}></Nav>
-        <Flex>
+        <Flex h={"100vh"} justifyContent={"center"} alignItems={"center"}>
+          <Text>Form goes here</Text>
         </Flex>
       </Box >
     );

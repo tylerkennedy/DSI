@@ -29,5 +29,3 @@ Install it and run:
 yarn
 yarn dev
 ```
-
-### #With love from [adedaniel](https://github.com/adedaniel)
