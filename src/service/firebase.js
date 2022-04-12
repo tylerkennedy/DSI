@@ -1,14 +1,26 @@
 import * as firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  databaseURL: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: ""
+
+  apiKey: "AIzaSyDDgD0lJi7OZzPLbTo3dHIYEkBN7PUorA0",
+
+  authDomain: "dsi-backend.firebaseapp.com",
+
+  databaseURL: "https://dsi-backend-default-rtdb.firebaseio.com",
+
+  projectId: "dsi-backend",
+
+  storageBucket: "dsi-backend.appspot.com",
+
+  messagingSenderId: "776300556905",
+
+  appId: "1:776300556905:web:97061928e105067737e8f8",
+
+  measurementId: "G-ZSMPVQSTLE"
+
 };
+
+
 
 // Initialize Firebase
 let fireDb = firebase;
