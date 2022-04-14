@@ -3,6 +3,7 @@ import Router, { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { fireAuth } from "../service/firebase";
 import Nav from "../components/nav"
+import Form from "../components/form"
 
 export default function Index() {
   const [user, setUser] = useState({});
@@ -46,7 +47,7 @@ export default function Index() {
       <Box h="100vh">
         <Nav user={user} onLogout={onLogout}></Nav>
         <Flex h={"100vh"} justifyContent={"center"} alignItems={"center"}>
-          <Text>Form goes here</Text>
+          <Form></Form>
         </Flex>
       </Box >
     );
