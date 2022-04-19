@@ -58,7 +58,17 @@ class Form extends Component {
         height: event.target.height.value,
         weight: event.target.weight.value,
         eyes: event.target.eyes.value,
-        hair: event.target.hair.value
+        hair: event.target.hair.value,
+        notifiedBy: event.target.notifiedBy.value,
+        dateNotified: event.target.dateNotified.value,
+        timeNotified: event.target.timeNotified.value,
+        nameKin: event.target.nameKin.value,
+        addressKin: event.target.addressKin.value,
+        phoneNumberKin: event.target.phoneNumberKin.value,
+        relationshipKin: event.target.relationshipKin.value,
+        cityKin: event.target.cityKin.value,
+        stateKin: event.target.stateKin.value,
+        zipKin: event.target.zipKin.value
       }
 
       console.log("Here is our form data: ", data) // Look for this output in the browser console to see if the data is being read properly
@@ -67,6 +77,8 @@ class Form extends Component {
     return (
       <Flex>
         <form onSubmit={handleSubmit}>
+          // Start Boxes of Information
+          // Basic Info Section
           <Box py={2}>
             <FormLabel htmlFor='caseNumber'>Case Number</FormLabel>
             <Input id='caseNumber' type='text'></Input>
@@ -99,10 +111,12 @@ class Form extends Component {
             <FormLabel htmlFor='timeOfArrival'>Time of Arrival</FormLabel>
             <Input id='timeOfArrival' type='text'></Input>
           </Box> 
+          // Possibly change to checkbox format
           <Box py={2}>
             <FormLabel htmlFor='suspectedCause'>Suspected Cause</FormLabel>
             <Input id='suspectedCause' type='text'></Input>
           </Box> 
+          // Begin Decedent Information Section
           <Box py={2}>
             <FormLabel htmlFor='coronerOrDeputy'>Coroner/Deputy</FormLabel>
             <Input id='coronerOrDeputy' type='text'></Input>
@@ -182,6 +196,48 @@ class Form extends Component {
           <Box py={2}>
             <FormLabel htmlFor='hair'>Hair</FormLabel>
             <Input id='hair' type='text'></Input>
+          </Box> 
+          // Still required: checkbox status sections (marital status, education, race, ethnicity, employment, veteran or pregnant)
+          // Begin Next of Kin Section
+          <Box py={2}>
+            <FormLabel htmlFor='notifiedBy'>Notified By</FormLabel>
+            <Input id='notifiedBy' type='text'></Input>
+          </Box> 
+          <Box py={2}>
+            <FormLabel htmlFor='dateNotified'>Date Notified</FormLabel>
+            <Input id='dateNotified' type='text'></Input>
+          </Box> 
+          <Box py={2}>
+            <FormLabel htmlFor='timeNotified'>Time Notified</FormLabel>
+            <Input id='timeNotified' type='text'></Input>
+          </Box> 
+          <Box py={2}>
+            <FormLabel htmlFor='nameKin'>Name</FormLabel>
+            <Input id='nameKin' type='text'></Input>
+          </Box> 
+          <Box py={2}>
+            <FormLabel htmlFor='addressKin'>Address</FormLabel>
+            <Input id='addressKin' type='text'></Input>
+          </Box> 
+          <Box py={2}>
+            <FormLabel htmlFor='phoneNumberKin'>Phone Number</FormLabel>
+            <Input id='phoneNumberKin' type='text'></Input>
+          </Box> 
+          <Box py={2}>
+            <FormLabel htmlFor='relationshipKin'>Relationship</FormLabel>
+            <Input id='relationshipKin' type='text'></Input>
+          </Box> 
+          <Box py={2}>
+            <FormLabel htmlFor='cityKin'>City</FormLabel>
+            <Input id='cityKin' type='text'></Input>
+          </Box> 
+          <Box py={2}>
+            <FormLabel htmlFor='stateKin'>State</FormLabel>
+            <Input id='stateKin' type='text'></Input>
+          </Box> 
+          <Box py={2}>
+            <FormLabel htmlFor='zipKin'>Zip</FormLabel>
+            <Input id='zipKin' type='text'></Input>
           </Box> 
           <Button mt={4} type="submit">
             Submit
