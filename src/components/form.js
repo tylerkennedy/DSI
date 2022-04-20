@@ -18,7 +18,12 @@ const styles = {
 
 };
 
+// import needed tools for connecting to the database
+import { getDatabase, ref, set } from "firebase/database";
 
+// given from firebase doc's
+firebase.initializeApp(config); //Initialize your firebase here passing your firebase account config object
+   
 
 class Form extends Component {
 
@@ -72,6 +77,15 @@ class Form extends Component {
       }
 
       console.log("Here is our form data: ", data) // Look for this output in the browser console to see if the data is being read properly
+      
+      // do conversion for sending
+      var prep = JSON.stringify(data);
+      //^ also makes sure no disallowed values are in place
+      
+      // the docs define this as best practices to push with unique key each time
+      const newPostRef = postsRef.push();
+      newPostRef.set(prep);
+      
     }
 
     return (
