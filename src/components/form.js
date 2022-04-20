@@ -18,8 +18,10 @@ const styles = {
 
 };
 
+// import needed tools for connecting to the database
 import { getDatabase, ref, set } from "firebase/database";
 
+// given from firebase doc's
 firebase.initializeApp(config); //Initialize your firebase here passing your firebase account config object
    
 
