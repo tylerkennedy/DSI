@@ -253,6 +253,11 @@ class Form extends Component {
             <FormLabel htmlFor='zipKin'>Zip</FormLabel>
             <Input id='zipKin' type='text'></Input>
           </Box> 
+          # File upload section
+          <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
+          <label>upload file<input type="file" name="file[]" multiple /></label>
+          <label><input type="submit" name="button" id="button" value="Submit" /></label></form>
+
           <Button mt={4} type="submit">
             Submit
           </Button>
