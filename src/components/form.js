@@ -22,7 +22,7 @@ const styles = {
 import { getDatabase, ref, set } from "firebase/database";
 
 // given from firebase doc's
-firebase.initializeApp(config); //Initialize your firebase here passing your firebase account config object
+//firebase.initializeApp(config); //Initialize your firebase here passing your firebase account config object
    
 
 class Form extends Component {
