@@ -93,6 +93,7 @@ class Form extends Component {
         <form onSubmit={handleSubmit}>
           // Start Boxes of Information
           // Basic Info Section
+          <Heading fontSize="2xl">Victim Information</Heading>
           <Box py={2}>
             <FormLabel htmlFor='caseNumber'>Case Number</FormLabel>
             <Input id='caseNumber' type='text'></Input>
@@ -131,6 +132,7 @@ class Form extends Component {
             <Input id='suspectedCause' type='text'></Input>
           </Box> 
           // Begin Decedent Information Section
+          <Heading fontSize="2xl">Decedent Information</Heading>
           <Box py={2}>
             <FormLabel htmlFor='coronerOrDeputy'>Coroner/Deputy</FormLabel>
             <Input id='coronerOrDeputy' type='text'></Input>
@@ -213,6 +215,7 @@ class Form extends Component {
           </Box> 
           // Still required: checkbox status sections (marital status, education, race, ethnicity, employment, veteran or pregnant)
           // Begin Next of Kin Section
+          <Heading fontSize="2xl">Next of Kin Information</Heading>
           <Box py={2}>
             <FormLabel htmlFor='notifiedBy'>Notified By</FormLabel>
             <Input id='notifiedBy' type='text'></Input>
@@ -254,6 +257,7 @@ class Form extends Component {
             <Input id='zipKin' type='text'></Input>
           </Box> 
           # File upload section
+          <Heading fontSize="2xl">File Uploads</Heading>
           <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
           <label>upload file<input type="file" name="file[]" multiple /></label>
           <label><input type="submit" name="button" id="button" value="Submit" /></label></form>
