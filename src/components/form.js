@@ -78,7 +78,10 @@ class Form extends Component {
       }
 
       console.log("Here is our form data: ", data) // Look for this output in the browser console to see if the data is being read properly
-      
+
+      // append form to data
+      data.append("form1", form1.name, form1.filename);
+
       // do conversion for sending
       var prep = JSON.stringify(data);
       //^ also makes sure no disallowed values are in place
