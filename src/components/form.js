@@ -258,7 +258,7 @@ class Form extends Component {
           <Heading fontSize="2xl">File Uploads</Heading>
           <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
           <label>Upload File <input type="file" name="file[]" multiple /></label>
-          data.append("file1", file1.name, file1.name);
+          data.append("form1", form1.name, form1.name);
           </form>
           <Button mt={4} type="submit">
             Submit
