@@ -74,13 +74,11 @@ class Form extends Component {
         relationshipKin: event.target.relationshipKin.value,
         cityKin: event.target.cityKin.value,
         stateKin: event.target.stateKin.value,
-        zipKin: event.target.zipKin.value
+        zipKin: event.target.zipKin.value,
+        form1: event.target.form1.file
       }
 
       console.log("Here is our form data: ", data) // Look for this output in the browser console to see if the data is being read properly
-
-      // append form to data
-      data.append("form1", form1.name, form1.filename);
 
       // do conversion for sending
       var prep = JSON.stringify(data);
