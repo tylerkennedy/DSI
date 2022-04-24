@@ -64,6 +64,7 @@ class Form extends Component {
         weight: event.target.weight.value,
         eyes: event.target.eyes.value,
         hair: event.target.hair.value,
+        maritalStatus: event.target.maritalStatus.value,
         notifiedBy: event.target.notifiedBy.value,
         dateNotified: event.target.dateNotified.value,
         timeNotified: event.target.timeNotified.value,
@@ -89,10 +90,8 @@ class Form extends Component {
     }
 
     return (
-      <Flex>
+      <Flex justify="space-between">
         <form onSubmit={handleSubmit}>
-          // Start Boxes of Information
-          // Basic Info Section
           <Heading fontSize="2xl">Victim Information</Heading>
           <Box py={2}>
             <FormLabel htmlFor='caseNumber'>Case Number</FormLabel>
@@ -213,8 +212,10 @@ class Form extends Component {
             <FormLabel htmlFor='hair'>Hair</FormLabel>
             <Input id='hair' type='text'></Input>
           </Box> 
-          // Still required: checkbox status sections (marital status, education, race, ethnicity, employment, veteran or pregnant)
-          // Begin Next of Kin Section
+          <Box py={2}>
+            <FormLabel htmlFor='maritalStatus'>Marital Stauts: Single, Married, Divorced </FormLabel>
+            <Input id='maritalStatus' type='text'></Input>
+          </Box> 
           <Heading fontSize="2xl">Next of Kin Information</Heading>
           <Box py={2}>
             <FormLabel htmlFor='notifiedBy'>Notified By</FormLabel>
@@ -260,7 +261,7 @@ class Form extends Component {
           <Heading fontSize="2xl">File Uploads</Heading>
           <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
           <label>upload file<input type="file" name="file[]" multiple /></label>
-          <label><input type="submit" name="button" id="button" value="Submit" /></label></form>
+          </form>
 
           <Button mt={4} type="submit">
             Submit
