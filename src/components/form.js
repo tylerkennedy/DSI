@@ -125,12 +125,10 @@ class Form extends Component {
             <FormLabel htmlFor='timeOfArrival'>Time of Arrival</FormLabel>
             <Input id='timeOfArrival' type='text'></Input>
           </Box> 
-          // Possibly change to checkbox format
           <Box py={2}>
             <FormLabel htmlFor='suspectedCause'>Suspected Cause</FormLabel>
             <Input id='suspectedCause' type='text'></Input>
           </Box> 
-          // Begin Decedent Information Section
           <Heading fontSize="2xl">Decedent Information</Heading>
           <Box py={2}>
             <FormLabel htmlFor='coronerOrDeputy'>Coroner/Deputy</FormLabel>
@@ -213,7 +211,7 @@ class Form extends Component {
             <Input id='hair' type='text'></Input>
           </Box> 
           <Box py={2}>
-            <FormLabel htmlFor='maritalStatus'>Marital Stauts: Single, Married, Divorced </FormLabel>
+            <FormLabel htmlFor='maritalStatus'>Marital Status: Single, Married, Divorced </FormLabel>
             <Input id='maritalStatus' type='text'></Input>
           </Box> 
           <Heading fontSize="2xl">Next of Kin Information</Heading>
@@ -257,10 +255,9 @@ class Form extends Component {
             <FormLabel htmlFor='zipKin'>Zip</FormLabel>
             <Input id='zipKin' type='text'></Input>
           </Box> 
-          # File upload section
           <Heading fontSize="2xl">File Uploads</Heading>
           <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
-          <label>upload file<input type="file" name="file[]" multiple /></label>
+          <label>Upload File <input type="file" name="file[]" multiple /></label>
           </form>
 
           <Button mt={4} type="submit">
