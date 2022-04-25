@@ -46,7 +46,7 @@ export default function Index() {
     return (
       <Box h="100vh">
         <Nav user={user} onLogout={onLogout}></Nav>
-        <Flex h={"100vh"} justifyContent={"center"} alignItems={"center"}>
+        <Flex minH={"100vh"} py={10} justifyContent={"center"} alignItems={"center"}>
           <Form></Form>
         </Flex>
       </Box >
