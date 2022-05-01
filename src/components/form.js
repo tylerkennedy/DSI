@@ -98,11 +98,8 @@ class Form extends Component {
             <FormLabel htmlFor='suspectedCause'>Suspected Cause</FormLabel>
             <Input id='suspectedCause' type='text'></Input>
           </Box>
-          {/* // Begin Decedent Information Section */}
-          <Box py={2}>
-            <FormLabel htmlFor='coronerOrDeputy'>Coroner/Deputy</FormLabel>
-            <Input id='coronerOrDeputy' type='text'></Input>
-          </Box>
+          <br></br>
+          <h2><strong>DECEDENT INFORMATION</strong></h2>
           <Box py={2}>
             <FormLabel htmlFor='firstName'>First name</FormLabel>
             <Input id='firstName' type='text'></Input>
@@ -179,8 +176,24 @@ class Form extends Component {
             <FormLabel htmlFor='hair'>Hair</FormLabel>
             <Input id='hair' type='text'></Input>
           </Box>
-          {/* // Still required: checkbox status sections (marital status, education, race, ethnicity, employment, veteran or pregnant)
-          // Begin Next of Kin Section */}
+          {/* // Still required: checkbox status sections (marital status, education, race, ethnicity, employment, veteran or pregnant).
+          Temporarily a fill-in box.
+          */}
+         <Box py={2}>
+            <FormLabel htmlFor='maritalStatus'>Marital Status</FormLabel>
+            <Input id='maritalStatus' type='text'></Input>
+          </Box>
+          <Box py={2}>
+            <FormLabel htmlFor='race'>Race</FormLabel>
+            <Input id='race' type='text'></Input>
+          </Box>
+          <Box py={2}>
+            <FormLabel htmlFor='ethnicity'>Ethnicity</FormLabel>
+            <Input id='ethnicity' type='text'></Input>
+          </Box>    
+          <br></br>
+          {/* Next of Kin section*/}
+          <h2><strong>NEXT OF KIN</strong></h2>
           <Box py={2}>
             <FormLabel htmlFor='notifiedBy'>Notified By</FormLabel>
             <Input id='notifiedBy' type='text'></Input>
