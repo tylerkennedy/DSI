@@ -98,6 +98,9 @@ class Form extends Component {
             <FormLabel htmlFor='suspectedCause'>Suspected Cause</FormLabel>
             <Input id='suspectedCause' type='text'></Input>
           </Box>
+
+
+          <br></br>
           <br></br>
           <h2><strong>DECEDENT INFORMATION</strong></h2>
           <Box py={2}>
@@ -191,6 +194,9 @@ class Form extends Component {
             <FormLabel htmlFor='ethnicity'>Ethnicity</FormLabel>
             <Input id='ethnicity' type='text'></Input>
           </Box>    
+
+
+          <br></br>
           <br></br>
           {/* Next of Kin section*/}
           <h2><strong>NEXT OF KIN</strong></h2>
@@ -234,14 +240,96 @@ class Form extends Component {
             <FormLabel htmlFor='zipKin'>Zip</FormLabel>
             <Input id='zipKin' type='text'></Input>
           </Box>
+
+
+          <br></br>
+          <br></br>
+          <h2><strong>INCIDENT INFORMATION</strong></h2>
+          <Box py={2}>
+            <FormLabel htmlFor='Death Date'>Death Date</FormLabel>
+            <Input id='deathDate' type='text'></Input>
+          </Box> 
+          <Box py={2}>
+            <FormLabel htmlFor='injuryDate'>Injury Date</FormLabel>
+            <Input id='injuryDate' type='text'></Input>
+          </Box>
+          <Box py={2}>
+            <FormLabel htmlFor='Death Time'>Death Time</FormLabel>
+            <Input id='deathTime' type='text'></Input>
+          </Box>
+          <Box py={2}>
+            <FormLabel htmlFor='Injury Time'>Injury Time</FormLabel>
+            <Input id='injuryTime' type='text'></Input>
+          </Box>
+          <Box py={2}>
+            <FormLabel htmlFor='placeofDeath'>Place of Death</FormLabel>
+            <Input id='placeofDeath' type='text'></Input>
+          </Box>
+          <Box py={2}>
+            <FormLabel htmlFor='placeofInjury'>Place of Injury</FormLabel>
+            <Input id='placeofInjury' type='text'></Input>
+          </Box>
+
+          {/* Needed: Last Seen Alive, Death Discovered section.*/}
+
+          <Box py={2}>
+            <FormLabel htmlFor='foundDeadBy'>Found Dead By</FormLabel>
+            <Input id='foundDeadBy' type='text'></Input>
+          </Box>
+          <Box py={2}>
+            <FormLabel htmlFor='addressFDB'>Address</FormLabel>
+            <Input id='addressFDB' type='text'></Input>
+          </Box>
+          <Box py={2}>
+            <FormLabel htmlFor='lastSeenAliveBy'>Last Seen Alive By</FormLabel>
+            <Input id='lastSeenAliveBy' type='text'></Input>
+          </Box>
+          <Box py={2}>
+            <FormLabel htmlFor='addressLSAB'>Address</FormLabel>
+            <Input id='addressLSAB' type='text'></Input>
+          </Box> 
+          <Box py={2}>
+            <FormLabel htmlFor='witness'>Witness to Injury, Illness, or Death</FormLabel>
+            <Input id='witness' type='text'></Input>
+          </Box>
+          <Box py={2}>
+            <FormLabel htmlFor='weather'>Weather</FormLabel>
+            <Input id='weather' type='text'></Input>
+          </Box>
+          <Box py={2}>
+            <FormLabel htmlFor='activity'>Activity</FormLabel>
+            <Input id='activity' type='text'></Input>
+          </Box>
+          <Box py={2}>
+            <FormLabel htmlFor='positionOB'>Position of Body</FormLabel>
+            <Input id='positionOB' type='text'></Input>
+          </Box>
+          <Box py={2}>
+            <FormLabel htmlFor='livor'>Livor</FormLabel>
+            <Input id='livor' type='text'></Input>
+          </Box>
+          <Box py={2}>
+            <FormLabel htmlFor='rigor'>Rigor</FormLabel>
+            <Input id='rigor' type='text'></Input>
+          </Box>
+
+          {/*Still needed: Investigation, Case History, Narrative/Comments, Pills on Scene sections. */}
+
           <Button mt={4} type="submit">
             Submit
           </Button>
+
+          
+
+
+
         </form>
       </Flex >
     );
   }
 }
+
+// STILL NEED TO BE ADDED.... ability or upload pictures or recordings. Potentially add checklists.
 
 // @ts-ignore
 export default (Form);
